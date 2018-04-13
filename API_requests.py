@@ -21,7 +21,7 @@ def make_tmdb_api_request(method, api_key, extra_params=None):
 
 list_of_films = []
 for i in range(1000):
-    string = make_tmdb_api_request(method='/movie/' + str(i+6000), api_key='4aac4d6948ada9b037fddc6466d965be')
+    string = make_tmdb_api_request(method='/movie/' + str(i+10000), api_key='4aac4d6948ada9b037fddc6466d965be')
     data = {}
     data['original_title'] = string['original_title']
     data['original_language'] = string['original_language']
